@@ -10,7 +10,9 @@
   "homepage": "http://foundation.zurb.com",
   "dependencies": {
     "foundation-sites": "~6.2.0",
-    "motion-ui": "~1.1.0"
+    "motion-ui": "~1.1.0",
+    "epub.js": "^0.2.15",
+    "jszip": "Stuk/jszip#^2.5.0"
   },
   "ignore": [
     "**/.*",

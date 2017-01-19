@@ -1,0 +1,46 @@
+    <!-- Loading JavaScripts
+    ================================================== -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.js"><\/script>')
+    </script>
+    <!-- Foundation -->
+    <script src="{{ site.baseurl }}/bower_components/what-input/what-input.js"></script>
+    <script src="{{ site.baseurl }}/bower_components/foundation-sites/dist/foundation.js"></script>
+    <!-- Epub.js -->
+    <script src="{{ site.baseurl }}/js/jszip.js"></script>
+    <script src="{{ site.baseurl }}/bower_components/epub.js/build/epub.js"></script>
+
+
+
+    <script src="{{ site.baseurl }}/js/app.js"></script>
+
+    <!-- Google Analytics CHANGE THIS TO YOUR UA CODE-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-8418273-8', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    {% if page.type == 'post' %}
+    <script>
+        var Book = ePub("{{ site.baseurl }}/letters/{{ page.letterUrl }}.epub", { 
+            restore: true,
+            spreads: false,
+            storage: true,
+            fixedLayout: true
+        });
+        Book.renderTo("area"); 
+    </script>
+    {% endif %}

@@ -1,13 +1,12 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Project
-description : This is the description of my project
+name : kxf6i6ygsl
+brand : kxf6i6ygsl
+description : 
 keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author : Daigo Fujiwara
-year : 2016
+url : http://kxf6i6ygsl.github.io
+email : kxf6i6ygsl@protonmail.com
+github : kxf6i6ygsl
+author : kxf6i6ygsl
+year : 2017
 markdown : kramdown
 exclude :
   - node_modules
