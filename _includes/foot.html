@@ -12,8 +12,6 @@
     <script src="{{ site.baseurl }}/js/jszip.js"></script>
     <script src="{{ site.baseurl }}/bower_components/epub.js/build/epub.js"></script>
 
-
-
     <script src="{{ site.baseurl }}/js/app.js"></script>
 
     <!-- Google Analytics CHANGE THIS TO YOUR UA CODE-->
@@ -35,12 +33,12 @@
 
     {% if page.type == 'post' %}
     <script>
-        var Book = ePub("{{ site.baseurl }}/letters/{{ page.letterUrl }}.epub", { 
+        var Book = ePub("{{ site.baseurl }}/letters/{{ page.letterUrl }}.epub", {
             restore: true,
             spreads: false,
             storage: true,
             fixedLayout: true
         });
-        Book.renderTo("area"); 
+        Book.renderTo("area");
     </script>
     {% endif %}
