@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
 }
 
+footer.site-footer {
+  position: fixed;
+  bottom: 0;
+}
+
 #area,
 .arrow
 {
@@ -62,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     user-select: none;
 }
 
-    
+
 #next {
     right: 40px;
     text-align: right;

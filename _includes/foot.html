@@ -11,6 +11,7 @@
     <!-- Epub.js -->
     <script src="{{ site.baseurl }}/js/jszip.js"></script>
     <script src="{{ site.baseurl }}/bower_components/epub.js/build/epub.js"></script>
+    <script src="https://cdn.jsdelivr.net/hammerjs/2.0.8/hammer.min.js"></script>
 
     <script src="{{ site.baseurl }}/js/app.js"></script>
 
@@ -32,13 +33,8 @@
     </script>
 
     {% if page.type == 'post' %}
-    <script>
-        var Book = ePub("{{ site.baseurl }}/letters/{{ page.letterUrl }}.epub", {
-            restore: true,
-            spreads: false,
-            storage: true,
-            fixedLayout: true
-        });
-        Book.renderTo("area");
+    <script type="text/javascript">
+    window.currentBook = "{{ site.baseurl }}/letters/{{ page.letterUrl }}.epub"
     </script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/readr.js"></script>
     {% endif %}

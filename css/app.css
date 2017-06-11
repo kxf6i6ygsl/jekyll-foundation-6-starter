@@ -4076,6 +4076,10 @@ h1, h2, h3, h4, h5, h6 {
 .off-canvas {
   min-height: 100vh; }
 
+footer.site-footer {
+  position: fixed;
+  bottom: 0; }
+
 #area,
 .arrow {
   height: 69vh; }
